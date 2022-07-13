@@ -1,0 +1,121 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" 
+        crossorigin="anonymous">
+        <!-- bootstrap link -->
+    <style>
+        section{
+            padding: 60px 0;
+        }
+    </style>
+    <title>vh's pastries</title>
+    <!-- temp title -->
+</head>
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md navbar-light">
+        <!-- if screen is below md toggle button will show. if not navbar will show -->
+        <div class="container-xl">
+            <a href="#introduction" class="navbar-brand">
+                <span class="fw-bold text-secondary">
+                    vh's pastries 
+                </span>
+            </a>
+            <!-- toggle button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" 
+                aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- data-bs-toggle="collapse" will target div with collapse class -->
+            <!-- data-bs-target="#main-nav" will target div with id main-nav -->
+
+            <!-- navbar links -->
+            <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+                <ul class="navbar-nav text-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#aboutUs">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ourProducts">Our Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ourService">Our Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reviews">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contactUs">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#location">Location</a>
+                    </li>
+                    <li class="nav-item d-md-none">
+                        <a class="nav-link" href="#pricing">Pricing</a>
+                    </li>
+                    <li class="nav-item ms-2 d-none d-md-inline">
+                        <a class="btn btn-secondary" href="#orderNow">Order Now</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- navbar links -->
+
+        </div>
+    </nav>
+    
+    <!-- main -->
+    <section id="introduction">
+        <div class="container-lg">
+            <div class="row justify-content-center align-items-center">
+                <!-- will put everything in the center and justified -->
+                <div class="col-md-5 text-center text-md-start">
+                    <!-- 12 col until md screen -->
+                    <h1>
+                        <div class="display-2">
+                            vh's pastries
+                        </div>
+                        <div class="display-5 text-muted">
+                            We bake, you take.
+                        </div>
+                    </h1>
+                    <p class="lead my-4 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <a href="#orderNow" class="btn btn-secondary btn-lg">Order Now</a>
+                </div>
+                <!-- 12 col for xs screen, 5 col when it gets md/bigger screen -->
+                <div class="col-md-5 text-center d-none d-md-block">
+                    <!-- will not show if screen is small. will show in block if screen is md -->
+                    <img class="img-fluid" src="/assets/pastryImage1.jpg" alt="Pastry Image" style="height: 500px;">
+                    <!-- takes the full width of the parent element <div class="col-md-5 text-center"> -->
+                </div>
+                <!-- text-center also works on images -->
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- <h1>Pastry Shop Landing Page</h1> -->
+
+    <!-- <div class="container-sm my-5">
+        <h2>blablabla</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus voluptatum similique cupiditate minima temporibus, id fugiat exercitationem consequatur ipsum aspernatur impedit, ipsam consequuntur dicta maiores. Explicabo rerum enim esse hic.</p>
+    </div> -->
+
+    <!-- <div class="container-fluid">
+        lets groove
+    </div> -->
+    
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" 
+    crossorigin="anonymous">
+</script>
+</body>
+</html>
