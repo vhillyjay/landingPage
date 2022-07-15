@@ -12,6 +12,9 @@
     <link rel="stylesheet" 
         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css">
         <!-- bootstrap icons -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+   integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+   crossorigin=""/>
     <style>
         section{
             padding: 60px 0;
@@ -21,6 +24,20 @@
         }
         .redOrange{
             background-color: #7c5295;
+        }
+        .about-social{
+            transition: transform .2s;
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .about-social:hover{
+            -ms-transform: scale(1.5); /* IE 9 */
+            -webkit-transform: scale(1.5); /* Safari 3-8 */
+            transform: scale(1.5); 
+        }
+        #map{
+            height: 180px;
+            
         }
     </style>
     <title>vh's pastries</title>
@@ -123,9 +140,18 @@
                             CEO
                         </div>
                     </h1>
-                    <p class="lead my-4 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis molestiae dolores, ratione incidunt pariatur ducimus eos odio soluta nam culpa numquam sint ea rem minus veritatis tenetur vero similique itaque doloribus voluptate labore? Laborum voluptate dolor labore et expedita incidunt vitae non libero temporibus nisi quibusdam, totam accusamus. Vero, eius?</p>
-                    <div>
-                        social medias
+                    <p class="lead my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis molestiae dolores, ratione incidunt pariatur ducimus eos odio soluta nam culpa numquam sint ea rem minus veritatis tenetur vero similique itaque doloribus voluptate labore? Laborum voluptate dolor labore et expedita incidunt vitae non libero temporibus nisi quibusdam, totam accusamus. Vero, eius?</p>
+                    <div class="text-center text-md-center">
+                        <div class="about-social">
+                            <a href="#"><img src="assets/facebook.png" alt="" height="25"></a>
+                        </div>
+                        <div class="about-social">
+                            <a href="#"><img src="assets/twitter.png" alt="" height="25"></a>
+                        </div>
+                        <div class="about-social">
+                            <a href="#"><img src="assets/instagram.png" alt="" height="25"></a> 
+                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -135,7 +161,32 @@
 
     <!-- ourProducts -->
     <section id="ourProducts" class="">
-        our prodcuts content here
+        <div class="container-lg">
+            <div class="text-center">
+                <h2>Our Products</h2>
+                <p class="lead text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="assets/donuts.jpeg" height="" width="" class="d-block w-100" alt="...">
+                  </div>
+                  <!-- 1300 x 560 -->
+                  <div class="carousel-item">
+                    <img src="assets/croissant.png" height="" width="" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+        
     </section>
     <!-- ourProducts -->
 
@@ -272,32 +323,26 @@
 
             </div>
 
-            <!-- <div class="row justify-content-center pt-4">
-                <div class="col-8 col-lg-4">
-                    <div class="list-group">
-                        <div class="list-group-item py-3">
-                            <h5 class="mb-1">astra</h5>
-                            <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quibusdam explicabo doloremque nostrum fugit?</p>
-                            <small>Krizzy B.</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-8 col-lg-4">
-                    <div class="list-group">
-                        <div class="list-group-item py-3">
-                            <h5 class="mb-1">astra</h5>
-                            <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quibusdam explicabo doloremque nostrum fugit?</p>
-                            <small>Nicholson H.</small>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
         </div>
     </section>
     <!-- feedback -->
 
     <!-- location -->
-    <div id="location" class="text-center">location</div>
+    <div id="location" class="text-center bg-light">Come visit us!
+        <div class="container-md">
+            <div class="row justify-content-center my-5">
+                <div class="col-lg-9">
+                    <div id="map">
+                    </div>
+                </div>
+                <div class="mb-5"></div>
+            </div>
+        </div>
+
+    </div>
+    <!-- <div id="map">
+
+    </div> -->
     <!-- location -->
 
     <!-- contactUs -->
@@ -338,6 +383,10 @@
     </section>
     <!-- contactUs -->
 
+    <footer>
+        asdfasdf
+    </footer>
+
     <a class="scroll-to-top rounded" href="#page-top">
         <i class="fas fa-angle-up"></i>
     </a>
@@ -347,5 +396,9 @@
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" 
     crossorigin="anonymous">
 </script>
+<script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+   integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+   crossorigin=""></script>
+<script src="map.js"></script>
 </body>
 </html>
