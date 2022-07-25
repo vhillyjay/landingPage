@@ -37,12 +37,52 @@
             transform: scale(1.5); 
         }
         #map{
-            height: 400px;
-            
+            height: 400px; 
         }
         footer a{
             text-decoration: none;
         }
+        #feedbackImage{
+            display: inline;
+            background-color: yellow; 
+        }
+        #feedbackDetails{
+            display: inline;
+            background-color: yellow; 
+        }
+        .feedbackImage{
+            display: inline;
+            background-color: yellow; 
+        }
+        .feedbackDetails{
+            display: inline;
+            background-color: yellow; 
+        }
+        .feedbackDetailsBlock{
+            display: block;
+            background-color: yellow; 
+        }
+        .outer
+        {
+            background-color:green;
+            width: 100%;
+        }
+        .box-one
+        {
+            width:50%;
+            background-color:red;
+            /* height:200px; */
+            display:inline-block;
+        }
+
+        .box-two
+        {
+            width:50%;
+            background-color:blue;
+            /* height:200px; */
+            display:inline-block;
+        }
+
     </style>
     <title>double egg</title>
     <!-- temp title -->
@@ -317,8 +357,8 @@
                 <h2><i class="bi bi-stars"></i>Feedback</h2>
                 <p class="lead">What our customers think about us...</p>
             </div>
-            <div class="row justify-content-center my-5">
-                <div class="col-lg-8">
+            <div class="row row-cols-3 my-5">
+                <!-- <div class="col-lg-8">
                     <div class="list-group">
                         <div class="list-group-item py-3">
                             <div class="d-inline">
@@ -385,41 +425,107 @@
                             <small>Natong H.</small>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
-                <!-- <div class="col-8 col-lg-4"></div> -->
-
-                <!-- <div class="col-8 col-lg-4 col-xl-3">
-                    <div class="card border">
-                        <div class="card-body text-center py-4">
-                            <div class="d-inline">
-                                <div class="">
-                                    <img src="assets/avatar2.png" alt="Dine In image"  class="d-block">
-                                </div>
-                                <div>
-                                    <img src="assets/facebook.png" alt="" height="25" class="d-inline">
-                                    <img src="assets/instagram.png" alt="" height="25" class="d-inline">
-                                </div>
-                            </div>
+                <div class="col-4 mb-4">
+                    <div class="border">
+                        <div class=" text-center">
                             
-                                
-                            <div class="d-inline">
-                                
-                                <img src="assets/avatar2.png" alt="">
-                                
+                                <img src="assets/avatar1.png" class="my-3" alt="">
+                            
+                        </div>
+                        <div class=" container mb-3">
+                            <div class="pb-2 text-center">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
                             </div>
-
-                            <div class="d-inline">
-                                shyshyshy
-                                
+                            <h5 class="mb-1 text-center">Wish I knew sooner</h5>
+                            <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quibusdam explicabo doloremque nostrum fugit?</p>
+                            <small class="mb-3">Mark E.</small>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                <div class="col-4 mb-4">
+                    <div class="border">
+                        <div class=" text-center">
+                                <img src="assets/avatar3.png" class="my-3" alt="">
+                        </div>
+                        <div class=" container mb-3">
+                            <div class="pb-2 text-center">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
                             </div>
-                            <div class="d-inline">
-                                trial
-                            </div>
-
+                            <h5 class="mb-1 text-center">Above my expectations</h5>
+                            <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quibusdam explicabo doloremque nostrum fugit?</p>
+                            <small class="mb-3">Antoinette F.</small>
                         </div>
                     </div>
-                </div> -->
+                </div>
+                <div class="col-4 mb-4">
+                    <div class="border">
+                        <div class=" text-center">
+                            <img src="assets/avatar2.png" class="my-3" alt="">
+                        </div>
+                        <div class=" container mb-3">
+                            <div class="pb-2 text-center">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <h5 class="mb-1 text-center">Unreal</h5>
+                            <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quibusdam explicabo doloremque nostrum fugit?</p>
+                            <small class="mb-3">Andrew T.</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="border">
+                        <div class=" text-center">
+                            <img src="assets/avatar4.png" class="my-3" alt="">
+                        </div>
+                        <div class=" container mb-3">
+                            <div class="pb-2 text-center">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <h5 class="mb-1 text-center">They're extra!</h5>
+                            <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quibusdam explicabo doloremque nostrum fugit?</p>
+                            <small class="mb-3">Krizzy B.</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="border">
+                        <div class=" text-center">
+                            <img src="assets/avatar3.png" class="my-3" alt="">
+                        </div>
+                        <div class=" container mb-3">
+                            <div class="pb-2 text-center">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                            </div>
+                            <h5 class="mb-1 text-center">W</h5>
+                            <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quibusdam explicabo doloremque nostrum fugit?</p>
+                            <small class="mb-3">Charry V.</small>
+                        </div>
+                    </div>
+                </div>
 
             </div>
 
@@ -690,8 +796,6 @@
             </div>
         </div>
     </div>
-
-    <a href="" class="footer-link hover-lr">having you near me</a>
 
     <a class="scroll-to-top rounded" href="#page-top">
         <i class="fas fa-angle-up"></i>
